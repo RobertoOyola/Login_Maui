@@ -23,17 +23,21 @@
                     Text="Usuario" />
                 <Frame
                     Padding="0">
-                    <Entry />
+                    <Entry 
+                        x:Name="User"/>
                 </Frame>
                 <Label 
                     Text="Contrasenia" />
                 <Frame
                     Padding="0">
-                    <Entry />          
+                    <Entry 
+                        IsPassword="True"
+                        x:Name="Password"/>          
                 </Frame>
                 <Button 
                     Margin="25"
-                    Text="INICIAR SESION"/>
+                    Text="INICIAR SESION"
+                    Clicked="Button_Clicked" />
             </StackLayout>
             
 
